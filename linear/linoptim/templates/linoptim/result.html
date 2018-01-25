@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% load new_filters %}
+
+{% block title %}{% endblock %}
+templatetags
+{% block content %}
+    <p><h2>Result: {{ data.linear_result }}</h2></p>
+
+    <p><a href="{% url 'index' %}">Back</a></p>
+{% endblock %}
